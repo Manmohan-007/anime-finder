@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-200;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar:vertical {
+  height: 0.1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:vertical {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:vertical {
+  @apply bg-indigo-400;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:vertical:hover {
+  @apply bg-gray-500;
+}
+.ant-select-item-option-content {
+  font-size: 1.1rem !important;
+}
+
+.ant-select-selector {
+  height: auto !important;
+  padding: 8px 16px !important;
+}
+
+.slick-slide > div {
+  margin: auto 0.6rem;
+}
+
+.ant-pagination {
+  margin: 1rem 0 1rem 75% !important;
+}
+.logo {
+  margin-left: 60px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.heading {
+  margin-left: 12px;
+  font-size: 29px;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+  color: rgba(37, 99, 235, var(--tw-text-opacity));
+}
+.ant-btn-primary {
+  color: #fff !important;
+  border-color: #1890ff !important;
+  background: #1890ff !important;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%) !important;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%) !important;
+}
+
+.filterHeading {
+  margin-left: 1rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.filterOptions {
+  margin-left: 1rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+.ant-checkbox + span {
+  padding-right: 30px;
+  padding-left: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
